@@ -27,6 +27,8 @@ module Locomotiveapp
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
+    config.assets.initialize_on_precomplie = false
+
     config.x.locomotive_search_backend = :algolia
   end
 end
