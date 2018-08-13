@@ -1,24 +1,7 @@
-PATH
-  remote: ../../common
-  specs:
-    locomotivecms_common (0.3.0)
-      activesupport (~> 5.1.5)
-      attr_extras (~> 5.2.0)
-      colorize
-      stringex (~> 2.8.2)
-
-PATH
-  remote: ../../custom_fields
-  specs:
-    custom_fields (2.9.0.rc2)
-      activesupport (~> 5.1.5)
-      bcrypt (~> 3.1.11)
-      carrierwave-mongoid (~> 1.0.0)
-      monetize (~> 1.7.0)
-      mongoid (>= 6.2, < 7.0)
-
-PATH
-  remote: ../../engine
+GIT
+  remote: git@github.com:locomotivecms/engine.git
+  revision: 4f04718920e2c861215a042adf9c2b18754d4e36
+  branch: sections
   specs:
     locomotivecms (3.4.0.rc1)
       actionmailer-with-request (~> 0.5.0)
@@ -34,7 +17,7 @@ PATH
       dragonfly (~> 1.1.4)
       flash_cookie_session (~> 1.1.1)
       font-awesome-sass (~> 5.0.9)
-      grape (~> 1.0.3)
+      grape (~> 1.0.2)
       grape-entity (= 0.7.1)
       highline (~> 1.7.10)
       jbuilder (~> 2.5)
@@ -59,15 +42,10 @@ PATH
       slim (~> 3.0.9)
       yajl-ruby (~> 1.3.1)
 
-PATH
-  remote: ../../search
-  specs:
-    locomotivecms_search (0.1.0)
-      algoliasearch (~> 1.19)
-      rails (>= 5.1.6, < 6)
-
-PATH
-  remote: ../../steam
+GIT
+  remote: git@github.com:locomotivecms/steam.git
+  revision: 68c936e92a36964d968c34d90888889d20fa591f
+  branch: sections_static
   specs:
     locomotivecms_steam (1.4.0.rc2)
       RedCloth (~> 4.3.2)
@@ -95,6 +73,35 @@ PATH
       sass (~> 3.4.25)
       sprockets (~> 3.7.1)
       uglifier (~> 4.1.3)
+
+GIT
+  remote: https://github.com/locomotivecms/common.git
+  revision: b9e41d0303f063b86ebf2800ba54ea7276666656
+  specs:
+    locomotivecms_common (0.3.0)
+      activesupport (~> 5.1.5)
+      attr_extras (~> 5.2.0)
+      colorize
+      stringex (~> 2.8.2)
+
+GIT
+  remote: https://github.com/locomotivecms/custom_fields.git
+  revision: 9df1a1cc879bfde8716b67341d1c0747e0be1f45
+  specs:
+    custom_fields (2.9.0.rc2)
+      activesupport (~> 5.1.5)
+      bcrypt (~> 3.1.11)
+      carrierwave-mongoid (~> 1.0.0)
+      monetize (~> 1.7.0)
+      mongoid (>= 6.2, < 7.0)
+
+GIT
+  remote: https://github.com/locomotivecms/search.git
+  revision: 1a4c8be7d2c111311fca35c7488917f06c4dddab
+  specs:
+    locomotivecms_search (0.1.0)
+      algoliasearch (~> 1.19)
+      rails (>= 5.1.6, < 6)
 
 GEM
   remote: https://rubygems.org/
@@ -141,7 +148,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    algoliasearch (1.19.2)
+    algoliasearch (1.23.2)
       httpclient (~> 2.8, >= 2.8.3)
       json (>= 1.5.1)
     archive-zip (0.11.0)
@@ -175,7 +182,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (>= 2.0, < 4.0)
-    carrierwave (1.2.2)
+    carrierwave (1.2.3)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
@@ -302,7 +309,7 @@ GEM
     method_source (0.9.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
+    mime-types-data (3.2018.0812)
     mimetype-fu (0.1.2)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
@@ -310,7 +317,7 @@ GEM
     moneta (1.0.0)
     monetize (1.7.0)
       money (~> 6.9)
-    money (6.11.3)
+    money (6.12.0)
       i18n (>= 0.6.4, < 1.1)
     mongo (2.5.1)
       bson (>= 4.3.0, < 5.0.0)
@@ -320,9 +327,9 @@ GEM
     mongoid (6.4.0)
       activemodel (>= 5.1, < 6.0.0)
       mongo (>= 2.5.1, < 3.0.0)
-    mongoid-grid_fs (2.3.0)
+    mongoid-grid_fs (2.4.0)
       mime-types (>= 1.0, < 4.0)
-      mongoid (>= 3.0, < 7.0)
+      mongoid (>= 3.0, < 8.0)
     mongoid-tree (2.1.1)
       mongoid (>= 4.0, < 8)
     morphine (0.1.1)
@@ -395,7 +402,7 @@ GEM
       railties (>= 4.2.0, < 5.3)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
-    sanitize (4.6.4)
+    sanitize (4.6.6)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
       nokogumbo (~> 1.4)
@@ -498,4 +505,4 @@ RUBY VERSION
    ruby 2.4.3p205
 
 BUNDLED WITH
-   1.16.1
+   1.16.3

@@ -6,12 +6,19 @@ ruby '2.4.3'
 gem 'mongoid'
 gem 'devise'
 
-gem 'custom_fields', path: '../../custom_fields' # for Developers
-gem 'locomotivecms_common', path: '../../common', require: false
-gem 'locomotivecms_steam', path: '../../steam', require: false
-gem 'locomotivecms', path: '../../engine'
+# gem 'pry'
+# gem 'custom_fields', path: '../custom_fields' # for Developers
+# gem 'locomotivecms_common', path: '../common', require: false
+# gem 'locomotivecms_steam', path: '../steam', require: false
+# gem 'locomotivecms', path: '../engine'
+# gem 'locomotivecms_search', path: '../search'
 
-gem 'locomotivecms_search', path: '../../search'
+gem 'custom_fields', git: 'https://github.com/locomotivecms/custom_fields.git'
+gem 'locomotivecms_common', git: 'https://github.com/locomotivecms/common.git'
+gem 'locomotivecms_steam', git: 'git@github.com:locomotivecms/steam.git', branch: 'sections_static'
+gem 'locomotivecms', git: 'git@github.com:locomotivecms/engine.git', branch: 'sections'
+gem 'locomotivecms_search', git: 'https://github.com/locomotivecms/search.git'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
