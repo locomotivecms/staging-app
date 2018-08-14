@@ -15,8 +15,8 @@ gem 'devise'
 
 gem 'custom_fields', require: false
 gem 'locomotivecms_common', require: false
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', branch: 'sections_static', ref: '68c936e', require: false
-gem 'locomotivecms', github: 'locomotivecms/engine', branch: 'tmp_heroku_debug', ref: '7059a25c'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', branch: 'sections', ref: '9db0788', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', branch: 'sections', ref: 'f294bf29'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -46,9 +46,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
