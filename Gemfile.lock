@@ -45,8 +45,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 36af2243d38635e94915940ca7283146a8ad2bdc
-  ref: 36af224
+  revision: 0f5e3c9b8f23703512353183223dc278fa7b417a
+  ref: 0f5e3c9
   branch: sections
   specs:
     locomotivecms_steam (1.4.0.rc2)
