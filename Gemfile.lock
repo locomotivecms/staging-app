@@ -1,7 +1,12 @@
 GIT
   remote: https://github.com/locomotivecms/engine.git
+<<<<<<< HEAD
   revision: 7059a25c24cdbc10189929e02d6a6751585ce403
   ref: 7059a25c
+=======
+  revision: c5732464a6131c0ffb14a5e7ef5b7edd7977fe0b
+  ref: c5732464
+>>>>>>> caa01286e04a27e1c92efa07f7ae5ceb25bf064a
   branch: tmp_heroku_debug
   specs:
     locomotivecms (3.4.0.rc1)

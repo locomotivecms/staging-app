@@ -1,10 +1,11 @@
 production:
   clients:
     default:
-      uri: mongodb://heroku_h2pcqqmf:vosbv2daicik3cvb7kotjl52p2@ds163630.mlab.com:63630/heroku_h2pcqqmf
+      uri: <%= ENV['MONGODB_URI'] %>
       options:
         # consistency: :strong
         # identity_map_enabled: true
+
 development:
   # Configure available database clients. (required)
   clients:
