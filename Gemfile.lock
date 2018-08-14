@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: f294bf29919305486f851e13d097fb55d835842a
-  ref: f294bf29
+  revision: 9631f0f95bd508d99b005dc565bbbe0e6f76a60d
+  ref: 9631f0f9
   branch: sections
   specs:
     locomotivecms (3.4.0.rc1)
@@ -18,7 +18,7 @@ GIT
       dragonfly (~> 1.1.4)
       flash_cookie_session (~> 1.1.1)
       font-awesome-sass (~> 5.0.9)
-      grape (~> 1.0.2)
+      grape (~> 1.0.3)
       grape-entity (= 0.7.1)
       highline (~> 1.7.10)
       jbuilder (~> 2.5)
