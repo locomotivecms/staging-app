@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: c5732464a6131c0ffb14a5e7ef5b7edd7977fe0b
-  ref: c5732464
-  branch: tmp_heroku_debug
+  revision: 9ec7cba7616870c2850da72558c868f1a569a4fb
+  ref: 9ec7cba7
+  branch: sections
   specs:
     locomotivecms (3.4.0.rc1)
       actionmailer-with-request (~> 0.5.0)

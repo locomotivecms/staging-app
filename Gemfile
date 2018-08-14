@@ -16,7 +16,7 @@ gem 'devise'
 gem 'custom_fields', require: false
 gem 'locomotivecms_common', require: false
 gem 'locomotivecms_steam', github: 'locomotivecms/steam', branch: 'sections_static', ref: '68c936e', require: false
-gem 'locomotivecms', github: 'locomotivecms/engine', branch: 'tmp_heroku_debug', ref: 'c5732464'
+gem 'locomotivecms', github: 'locomotivecms/engine', branch: 'sections', ref: '9ec7cba7'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
