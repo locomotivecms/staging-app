@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 9631f0f95bd508d99b005dc565bbbe0e6f76a60d
-  ref: 9631f0f9
+  revision: 0d33dabf23cae7cac5c3318252923b46e7ffad19
+  ref: 0d33dabf
   branch: sections
   specs:
     locomotivecms (3.4.0.rc1)
@@ -17,7 +17,7 @@ GIT
       devise-encryptable (~> 0.2.0)
       dragonfly (~> 1.1.4)
       flash_cookie_session (~> 1.1.1)
-      font-awesome-sass (~> 5.0.9)
+      font-awesome-sass (~> 5.2.0)
       grape (~> 1.0.3)
       grape-entity (= 0.7.1)
       highline (~> 1.7.10)
@@ -45,8 +45,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 6d7e97eae55f3efe1ddd0853aa7ab3f9129ca3ae
-  ref: 6d7e97e
+  revision: 1aecf8b5c48040ca5420a7453bffbfa722d1f6b1
+  ref: 1aecf8b5c4
   branch: sections
   specs:
     locomotivecms_steam (1.4.0.rc2)
@@ -236,7 +236,7 @@ GEM
     ffi (1.9.25)
     flash_cookie_session (1.1.6)
       rails (>= 3.0)
-    font-awesome-sass (5.0.13)
+    font-awesome-sass (5.2.0)
       sassc (>= 1.11)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -331,7 +331,7 @@ GEM
     morphine (0.1.1)
     multi_json (1.13.1)
     multi_xml (0.6.0)
-    mustermann (1.0.2)
+    mustermann (1.0.3)
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
     newrelic_rpm (5.3.0.346)
