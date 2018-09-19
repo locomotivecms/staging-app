@@ -15,7 +15,7 @@ gem 'devise'
 
 gem 'custom_fields', require: false
 gem 'locomotivecms_common', require: false
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', branch: 'sections', ref: 'b283ca7', require: false
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', branch: 'sections', ref: '7b9b9be', require: false
 gem 'locomotivecms', github: 'locomotivecms/engine', branch: 'sections', ref: 'a584f599'
 
 
