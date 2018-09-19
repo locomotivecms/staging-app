@@ -4,6 +4,8 @@ Dragonfly.app(:engine).configure do
     convert_command:  `which convert`.strip.presence || '/usr/local/bin/convert',
     identify_command: `which identify`.strip.presence || '/usr/local/bin/identify'
 
+  processor :thumb, Locomotive::Dragonfly::Processors::SmartThumb.new
+
   verify_urls true
 
   secret 'c508c5465873c2613969e14bacb7825627073bda7b9373a977a2ffe7dddc35bd'
