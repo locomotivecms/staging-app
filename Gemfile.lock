@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: a584f59908deb22f904d69b6cf859efe00211518
-  ref: a584f599
+  revision: dee6be7cd2aeb863b22b5407ee71ae92f3f07902
+  ref: dee6be7c
   branch: sections
   specs:
     locomotivecms (3.4.0.rc1)
