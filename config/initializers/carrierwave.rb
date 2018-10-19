@@ -29,11 +29,11 @@ CarrierWave.configure do |config|
       secret_access_key:  ENV['S3_SECRET_KEY'],
       region:             ENV['S3_BUCKET_REGION']
     }
-    #
-    # # Put your CDN host below instead
-    # if ENV['S3_ASSET_HOST_URL'].present?
-    #   config.asset_host = ENV['S3_ASSET_HOST_URL']
-    # end
+
+    # Put your CDN host below instead
+    if ENV['S3_ASSET_HOST_URL'].present?
+      config.asset_host = ENV['S3_ASSET_HOST_URL']
+    end
 
   else
     # settings for the local filesystem

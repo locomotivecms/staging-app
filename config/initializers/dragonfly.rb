@@ -15,6 +15,16 @@ Dragonfly.app(:engine).configure do
   fetch_file_whitelist /public/
 
   fetch_url_whitelist /.+/
+
+  url_host (case Rails.env.to_sym
+  when :production then Rails.application.config.action_controller.asset_host
+  else nil; end)
+end
+
+Dragonfly.app(:steam).configure do
+  url_host (case Rails.env.to_sym
+  when :production  then Rails.application.config.action_controller.asset_host
+  else nil; end)
 end
 
 # Logger
