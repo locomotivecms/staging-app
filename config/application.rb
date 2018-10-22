@@ -30,5 +30,13 @@ module Locomotiveapp
     config.assets.initialize_on_precomplie = false
 
     config.x.locomotive_search_backend = :algolia
+
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', header: :any, method: [:get, :post, :options, :head]
+      end
+    end
+
   end
 end
