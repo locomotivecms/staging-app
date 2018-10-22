@@ -31,10 +31,10 @@ module Locomotiveapp
 
     config.x.locomotive_search_backend = :algolia
 
-    config.middleware.insert_before 0, Rack::Cors do
+    config.middleware.insert_before ActionDispatch::Static, Rack::Cors, debug: true, logger: (-> { Rails.logger }) do
       allow do
         origins '*'
-        resource '*', headers: :any, methods: [:get, :post, :options, :head]
+        resource '/assets/*', headers: :any, methods: :any
       end
     end
 
