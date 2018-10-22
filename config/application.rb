@@ -34,7 +34,7 @@ module Locomotiveapp
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
-        resource '*', header: :any, method: [:get, :post, :options, :head]
+        resource '*', headers: :any, methods: [:get, :post, :options, :head]
       end
     end
 
