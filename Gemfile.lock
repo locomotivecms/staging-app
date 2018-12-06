@@ -76,8 +76,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 6819bb6d0134e302820704a9b5009f3dca59d764
-  ref: 6819bb6
+  revision: 5bdfb980e36afce79908ab4c252b96753c31e9cf
+  ref: 5bdfb98
   specs:
     locomotivecms_steam (1.5.0.beta1)
       RedCloth (~> 4.3.2)
@@ -96,7 +96,6 @@ GIT
       mimetype-fu (~> 0.1.2)
       moneta (~> 1.0.0)
       morphine (~> 0.1.1)
-      multi_json (~> 1.13.1)
       nokogiri (~> 1.8.2)
       pony (~> 1.12)
       rack-cache (~> 1.7.0)
