@@ -13,14 +13,14 @@ gem 'devise'
 # gem 'locomotivecms', path: '../engine'
 # gem 'locomotivecms_search', path: '../search'
 
-gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '4d1bd56', require: false
-gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '0275b70', require: false
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '589c122', require: false
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'cca80213'
+gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48c', require: false
+gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '128bb2d', require: false
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '42cc8bd3', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: '69f3c618'
 gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 5.2.2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # gem 'passenger-rails'
