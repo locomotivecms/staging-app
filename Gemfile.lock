@@ -11,8 +11,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/custom_fields.git
-  revision: 128bb2db305f913588a533863493248b4f4bf19b
-  ref: 128bb2d
+  revision: 89bce0a3a7a7b193f7b6a26c3836873a46843ae0
+  ref: 89bce0a
   specs:
     custom_fields (2.10.0.beta2)
       activesupport (>= 5.1, < 6.0)
@@ -23,8 +23,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 3f77f3da47115341134b899fa3734747558fef40
-  ref: 3f77f3da
+  revision: 708dfc1b932b76fe86f9dbf9ccaedbeee1c81abb
+  ref: 708dfc1b
   specs:
     locomotivecms (4.0.0.alpha2)
       actionmailer-with-request (~> 0.5.0)
@@ -35,7 +35,6 @@ GIT
       carrierwave-imageoptim (= 0.1.5)
       carrierwave-mongoid (~> 1.1.0)
       codemirror-rails (~> 5.16.0)
-      custom_fields (~> 2.10.0.beta2)
       devise (~> 4.4.1)
       devise-encryptable (~> 0.2.0)
       dragonfly (~> 1.1.4)
@@ -52,7 +51,6 @@ GIT
       json-schema (~> 2.8.0)
       kaminari-actionview (~> 1.1.1)
       kaminari-mongoid (~> 1.0.1)
-      locomotivecms_steam (~> 1.5.0.beta2)
       mongoid (~> 6.4.0)
       mongoid-tree (~> 2.1.0)
       multi_json (~> 1.13.1)
@@ -78,8 +76,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 42cc8bd3fa30bef94a3f6ad5aa9b804b71391381
-  ref: 42cc8bd3
+  revision: 4fd6fea78167be9c2d7e112bf3621325d616471c
+  ref: 4fd6fea
   specs:
     locomotivecms_steam (1.5.0.beta2)
       RedCloth (~> 4.3.2)
@@ -307,7 +305,7 @@ GEM
       fspath (>= 2.1, < 4)
       image_optim (~> 0.19)
     image_size (2.0.0)
-    in_threads (1.5.0)
+    in_threads (1.5.1)
     io-like (0.3.0)
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
