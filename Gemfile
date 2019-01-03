@@ -13,11 +13,11 @@ gem 'devise'
 # gem 'locomotivecms', path: '../engine'
 # gem 'locomotivecms_search', path: '../search'
 
-gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48c', require: false
-gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '89bce0a', require: false
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '4fd6fea', require: false
 gem 'locomotivecms', github: 'locomotivecms/engine', ref: '708dfc1b'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: 'f8f7ddd', require: false
+gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48c', require: false
 gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
+gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '6a19a4d', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
