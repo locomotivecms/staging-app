@@ -13,8 +13,8 @@ gem 'devise'
 # gem 'locomotivecms', path: '../engine'
 # gem 'locomotivecms_search', path: '../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '708dfc1b'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: 'f8f7ddd', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: '3b579c2'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: 'a75066f', require: false
 gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48c', require: false
 gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
 gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '6a19a4d', require: false
