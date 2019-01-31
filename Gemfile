@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.0'
 
+gem 'bundler', '1.17.3'
+
 gem 'mongoid'
 gem 'devise'
 
