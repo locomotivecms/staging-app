@@ -23,8 +23,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: d603a2affd7e8bb396e7627ce703dabe84c0465c
-  ref: d603a2af
+  revision: 5a177f85c4a80f1288d6f37a26f83642fe757aec
+  ref: 5a177f85
   specs:
     locomotivecms (4.0.0.alpha2)
       actionmailer-with-request (~> 0.5.0)
@@ -268,7 +268,7 @@ GEM
     equalizer (0.0.11)
     erubi (1.8.0)
     execjs (2.7.0)
-    exifr (1.3.5)
+    exifr (1.3.6)
     ffi (1.9.25)
     flash_cookie_session (1.1.6)
       rails (>= 3.0)

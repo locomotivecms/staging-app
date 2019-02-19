@@ -15,7 +15,7 @@ gem 'devise'
 # gem 'locomotivecms', path: '../engine'
 # gem 'locomotivecms_search', path: '../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'd603a2af'
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: '5a177f85'
 gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: 'a75066f', require: false
 gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48c', require: false
 gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
