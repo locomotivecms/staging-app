@@ -23,8 +23,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: e34b8ad7773d72ffe65e8a562d724789e72cf5c9
-  ref: e34b8ad
+  revision: 62cd89e93250bd23a356307d6354d7033dad1dbd
+  ref: 62cd89e9
   specs:
     locomotivecms (4.0.0.alpha3)
       actionmailer-with-request (~> 0.5.0)
