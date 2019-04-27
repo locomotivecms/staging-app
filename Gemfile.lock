@@ -23,11 +23,12 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 2cf640fd905708e2f322605b3611bd399a61bbc7
-  ref: 2cf640fd
+  revision: 1522c111dc493633ff88d368564246d5e93712d6
+  ref: 1522c111
   specs:
-    locomotivecms (4.0.0.alpha3)
+    locomotivecms (4.0.0.rc0)
       actionmailer-with-request (~> 0.5.0)
+      adomain (~> 0.1.1)
       autoprefixer-rails (~> 8.0.0)
       bazaar (~> 0.0.2)
       bootstrap-kaminari-views (~> 0.0.5)
@@ -35,6 +36,7 @@ GIT
       carrierwave-imageoptim (= 0.1.5)
       carrierwave-mongoid (~> 1.1.0)
       codemirror-rails (~> 5.16.0)
+      custom_fields (~> 2.10.0.beta3)
       devise (~> 4.6.2)
       devise-encryptable (~> 0.2.0)
       dragonfly (~> 1.2.0)
@@ -51,6 +53,7 @@ GIT
       json-schema (~> 2.8.0)
       kaminari-actionview (~> 1.1.1)
       kaminari-mongoid (~> 1.0.1)
+      locomotivecms_steam (~> 1.5.0.rc0)
       mongoid (~> 6.4.0)
       mongoid-tree (~> 2.1.0)
       multi_json (~> 1.13.1)
@@ -76,10 +79,10 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 6683b5e833edf3b3b13142662d1c4337b7cf15d5
-  ref: 6683b5e
+  revision: 0170c37b338fb9325f848437d1a0129fbf293ef9
+  ref: 0170c37b
   specs:
-    locomotivecms_steam (1.5.0.beta3)
+    locomotivecms_steam (1.5.0.rc0)
       RedCloth (~> 4.3.2)
       autoprefixer-rails (~> 8.0.0)
       bcrypt (~> 3.1.11)
@@ -156,6 +159,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
+    adomain (0.1.1)
+      addressable (~> 2.5)
     algoliasearch (1.26.0)
       httpclient (~> 2.8, >= 2.8.3)
       json (>= 1.5.1)
