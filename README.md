@@ -1,25 +1,17 @@
-# README
+# LocomotiveCMS Staging app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+Ruby on Rails application powering the LocomotiveCMS engine. This is the application you end up with when you follow the LocomotiveCMS installation guide [here](https://doc.locomotivecms.com/v4.0/docs/getting-started-with-locomotive).
 
-* Ruby version
+## Major component versions
 
-* System dependencies
+- Ruby 2.5
+- Ruby on Rails 5.2.3
+- LocomotiveCMS v4.0.0.rc0
 
-* Configuration
+## Contact
 
-* Database creation
+Feel free to contact me at didier at nocoffee dot fr.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+Copyright (c) 2019 NoCoffee, released under the MIT license
