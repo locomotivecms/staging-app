@@ -22,7 +22,7 @@ Dragonfly.app(:engine).configure do
 
   # we don't care if this is the Heroku app converting the image
   url_host (case Rails.env.to_sym
-  when :production then Rails.application.config.action_controller.asset_host
+  when :production then TRANSFORMED_IMAGES_SERVICE_URL
   else nil; end)
 end
 
