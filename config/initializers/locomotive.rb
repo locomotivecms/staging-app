@@ -67,6 +67,6 @@ Locomotive.configure do |config|
 
   # Indicate whether you want to allow users to register with the site. If set
   # to false the registration page will not be shown. (Default: true)
-  # config.enable_registration = true
+  config.enable_registration = false
 
 end

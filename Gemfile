@@ -12,10 +12,10 @@ gem 'devise'
 # gem 'custom_fields', path: '../custom_fields' # for Developers
 # gem 'locomotivecms_common', path: '../common', require: false
 # gem 'locomotivecms_steam', path: '../steam', require: false
-# gem 'locomotivecms', path: '../engine'
+gem 'locomotivecms', path: '../../engine'
 # gem 'locomotivecms_search', path: '../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '48bb396b'
+# gem 'locomotivecms', github: 'locomotivecms/engine', ref: '48bb396b'
 gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '034eece', require: false
 gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48', require: false
 gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'

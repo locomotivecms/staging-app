@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  
+
+  # Demo site
+  get '/locomotive/demo', to: 'demo#show'
+
   # Locomotive Back-office
   mount Locomotive::Engine => '/locomotive', as: 'locomotive' # you can change the value of the path, by default set to "/locomotive"
 
