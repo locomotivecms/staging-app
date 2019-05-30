@@ -21,6 +21,8 @@ gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48', requ
 gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
 gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '251b1b9', require: false
 
+gem 'scout_apm'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use Puma as the app server

@@ -462,6 +462,7 @@ GEM
     sassc (2.0.1)
       ffi (~> 1.9)
       rake
+    scout_apm (2.4.24)
     selenium-webdriver (3.141.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2, >= 1.2.2)
@@ -542,6 +543,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
+  scout_apm
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
