@@ -25,6 +25,7 @@ production:
 
 development:
   <<: *defaults
+  dev_trace: true
   monitor: false
 
 test:

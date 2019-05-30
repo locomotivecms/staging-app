@@ -27,6 +27,8 @@ module Locomotiveapp
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
+    config.autoload_paths << Rails.root.join('lib')
+
     config.assets.initialize_on_precomplie = false
 
     config.x.locomotive_search_backend = :algolia
@@ -36,6 +38,15 @@ module Locomotiveapp
         origins '*'
         resource '/assets/*', headers: :any, methods: :any
       end
+    end
+
+    # Steam
+    initializer 'beta_hosting.steam', after: 'steam' do |app|
+      require 'scout_apm'
+      ScoutApm::Rack.install!
+
+      require 'locomotive/steam/middlewares/scout_apm_tracker'
+      config.middleware.insert_before Locomotive::Middlewares::Site, Locomotive::Steam::Middlewares::ScoutApmTracker
     end
 
   end
