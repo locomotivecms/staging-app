@@ -5,6 +5,7 @@ ruby '2.5.0'
 
 gem 'bundler', '1.17.3'
 
+gem 'mongo', '2.8.0'
 gem 'mongoid'
 gem 'devise'
 
