@@ -40,14 +40,5 @@ module Locomotiveapp
       end
     end
 
-    # Steam
-    initializer 'beta_hosting.steam', after: 'steam' do |app|
-      require 'scout_apm'
-      ScoutApm::Rack.install!
-
-      require 'locomotive/steam/middlewares/scout_apm_tracker'
-      config.middleware.insert_before Locomotive::Middlewares::Site, Locomotive::Steam::Middlewares::ScoutApmTracker
-    end
-
   end
 end
