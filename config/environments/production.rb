@@ -1,6 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  redis_url = ENV['REDIS_URL'] || 'redis://127.0.0.1:6379/0/staging-locomotive'
+  config.cache_store = :redis_store, redis_url
+  config.session_store :redis_store, redis_server: redis_url
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
