@@ -16,7 +16,7 @@ gem 'devise'
 # gem 'locomotivecms', path: '../../engine'
 # gem 'locomotivecms_search', path: '../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '394d7927', branch: 'http_cache'
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'b6d3cd17', branch: 'http_cache'
 gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '0715a9f', branch: 'http_cache', require: false
 gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48', require: false
 gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
@@ -31,7 +31,7 @@ gem 'rack-cors', require: 'rack/cors'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 4.1.20'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
