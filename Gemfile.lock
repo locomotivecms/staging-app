@@ -23,8 +23,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 8b13a538f9e3acee0d6a14aa390f68b675583752
-  ref: 8b13a538
+  revision: 394d79277b3af18b6e1a67856737c22ab595c6cb
+  ref: 394d7927
   branch: http_cache
   specs:
     locomotivecms (4.0.0.rc0)
@@ -81,8 +81,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 3cc908b514e0347d66b5ac0576f0bc155e5086db
-  ref: 3cc908b
+  revision: 0715a9fe00813a45c6a38dc4ccb54201270ad70c
+  ref: 0715a9f
   branch: http_cache
   specs:
     locomotivecms_steam (1.5.0.rc0)
@@ -283,7 +283,7 @@ GEM
       rails (>= 3.0)
     font-awesome-sass (5.2.0)
       sassc (>= 1.11)
-    fspath (3.1.1)
+    fspath (3.1.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     grape (1.1.0)
@@ -313,8 +313,8 @@ GEM
     image_optim_pack (0.5.1)
       fspath (>= 2.1, < 4)
       image_optim (~> 0.19)
-    image_size (2.0.1)
-    in_threads (1.5.2)
+    image_size (2.0.2)
+    in_threads (1.5.3)
     io-like (0.3.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
@@ -398,7 +398,7 @@ GEM
     orm_adapter (0.5.0)
     pony (1.13.1)
       mail (>= 2.0)
-    progress (3.5.1)
+    progress (3.5.2)
     public_suffix (3.1.1)
     puma (4.0.0)
       nio4r (~> 2.0)
