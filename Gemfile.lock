@@ -25,7 +25,6 @@ GIT
   remote: https://github.com/locomotivecms/engine.git
   revision: b6d3cd1765fcc29d09e99bc78622ff8d69a00acc
   ref: b6d3cd17
-  branch: http_cache
   specs:
     locomotivecms (4.0.0.rc0)
       actionmailer-with-request (~> 0.5.0)
@@ -81,9 +80,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 0715a9fe00813a45c6a38dc4ccb54201270ad70c
-  ref: 0715a9f
-  branch: http_cache
+  revision: 023a1a70dd58f68b1437727a7d5f220081492c83
+  ref: 023a1a7
   specs:
     locomotivecms_steam (1.5.0.rc0)
       RedCloth (~> 4.3.2)
