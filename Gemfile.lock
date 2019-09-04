@@ -23,8 +23,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 0c620a5cfc9fbe205e7c0b95b29d11e76c67d433
-  ref: 0c620a5c
+  revision: 2111f293e55b15337423230b7fad129d8587e0d9
+  ref: 2111f293
   specs:
     locomotivecms (4.0.0.rc0)
       actionmailer-with-request (~> 0.5.0)
@@ -398,7 +398,7 @@ GEM
       mail (>= 2.0)
     progress (3.5.2)
     public_suffix (3.1.1)
-    puma (4.0.0)
+    puma (4.1.0)
       nio4r (~> 2.0)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
@@ -555,7 +555,7 @@ DEPENDENCIES
   mongo (= 2.8.0)
   mongoid
   newrelic_rpm
-  puma (~> 4.0.0)
+  puma (~> 4.1.0)
   rack-cors
   rails (~> 5.2.3)
   redis (~> 4.0.1)
