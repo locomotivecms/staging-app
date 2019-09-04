@@ -23,8 +23,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: b6d3cd1765fcc29d09e99bc78622ff8d69a00acc
-  ref: b6d3cd17
+  revision: d97da4f63f9f7b4462fdfa159d95bd664dc1fa10
+  ref: d97da4f6
   specs:
     locomotivecms (4.0.0.rc0)
       actionmailer-with-request (~> 0.5.0)
@@ -80,8 +80,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 023a1a70dd58f68b1437727a7d5f220081492c83
-  ref: 023a1a7
+  revision: 8cd7541d617ed24618d675f46d366a3106c32fc2
+  ref: 8cd7541
   specs:
     locomotivecms_steam (1.5.0.rc0)
       RedCloth (~> 4.3.2)
@@ -477,9 +477,8 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    sassc (2.0.1)
+    sassc (2.2.0)
       ffi (~> 1.9)
-      rake
     selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
