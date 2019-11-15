@@ -23,8 +23,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 2111f293e55b15337423230b7fad129d8587e0d9
-  ref: 2111f293
+  revision: 589983880c0e329697c2ed71892216795a79f43e
+  ref: 58998388
   specs:
     locomotivecms (4.0.0.rc0)
       actionmailer-with-request (~> 0.5.0)
@@ -80,8 +80,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 98dfc4f2994d6defc25284a2e5464081f20d7a9f
-  ref: 98dfc4f2
+  revision: e9cf772b0a8601c79fa6b461291c225d7ff470e4
+  ref: e9cf772
   specs:
     locomotivecms_steam (1.5.0.rc0)
       RedCloth (~> 4.3.2)
@@ -94,7 +94,7 @@ GIT
       duktape (~> 2.0.1.1)
       httparty (~> 0.16.0)
       kramdown (~> 1.16.2)
-      locomotivecms-solid (~> 4.0.1)
+      liquid (~> 4.0.3)
       locomotivecms_common (~> 0.3.1)
       mime-types (~> 3.1.0)
       mimetype-fu (~> 0.1.2)
@@ -342,13 +342,11 @@ GEM
       kaminari-core (~> 1.0)
       mongoid
     kramdown (1.16.2)
+    liquid (4.0.3)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    locomotivecms-liquid (4.0.0)
-    locomotivecms-solid (4.0.1)
-      locomotivecms-liquid (~> 4.0.0)
     logger (1.4.1)
     loofah (2.3.0)
       crass (~> 1.0.2)
