@@ -16,11 +16,11 @@ gem 'devise'
 # gem 'locomotivecms', path: '../../engine'
 # gem 'locomotivecms_search', path: '../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '58998388'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: 'e9cf772', require: false
-gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c2a1c48', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: '4abd614c'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '5c53523', require: false
+gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
 gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
-gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '251b1b9', require: false
+gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '455eac8', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -78,7 +78,7 @@ group :test do
 end
 
 group :production do
-  gem 'newrelic_rpm'
+  # gem 'newrelic_rpm'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
