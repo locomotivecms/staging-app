@@ -25,7 +25,7 @@ gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '455eac8', requ
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use Puma as the app server
-gem 'puma', '~> 4.1.0'
+gem 'puma', '~> 4.3.1'
 # gem 'passenger-rails'
 gem 'rack-cors', require: 'rack/cors'
 # Use SCSS for stylesheets

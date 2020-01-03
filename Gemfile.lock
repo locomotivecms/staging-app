@@ -397,7 +397,7 @@ GEM
       mail (>= 2.0)
     progress (3.5.2)
     public_suffix (4.0.2)
-    puma (4.1.1)
+    puma (4.3.1)
       nio4r (~> 2.0)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
@@ -554,7 +554,7 @@ DEPENDENCIES
   locomotivecms_steam!
   mongo (= 2.8.0)
   mongoid
-  puma (~> 4.1.0)
+  puma (~> 4.3.1)
   rack-cors
   rails (~> 5.2.3)
   redis (~> 4.0.1)
