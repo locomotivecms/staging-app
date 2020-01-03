@@ -23,10 +23,10 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 566eaf2377d8c7e07f662027aaec05f060c65905
-  ref: 566eaf23
+  revision: 71170a391c57692c6f59c52f0186b4a98bcaab3f
+  ref: 71170a39
   specs:
-    locomotivecms (4.0.0)
+    locomotivecms (4.0.1)
       actionmailer-with-request (~> 0.5.0)
       adomain (~> 0.1.1)
       autoprefixer-rails (~> 8.0.0)
