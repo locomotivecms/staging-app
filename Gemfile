@@ -43,6 +43,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production + Cache
 gem 'redis', '~> 4.1.4'
+gem 'hiredis', '~> 0.6.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
