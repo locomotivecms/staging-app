@@ -1,31 +1,31 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '2.7.2'
 
-gem 'bundler', '1.17.3'
+gem 'bundler', '2.1.4'
 
-gem 'mongo', '2.8.0'
+gem 'mongo', '2.13.1'
 gem 'mongoid'
 gem 'devise'
 
 # gem 'pry'
-# gem 'custom_fields', path: '../custom_fields' # for Developers
-# gem 'locomotivecms_common', path: '../common', require: false
-# gem 'locomotivecms_steam', path: '../steam', require: false
+# gem 'custom_fields', path: '../../custom_fields' # for Developers
+# gem 'locomotivecms_common', path: '../../common', require: false
+# gem 'locomotivecms_steam', path: '../../steam', require: false
 # gem 'locomotivecms', path: '../../engine'
-# gem 'locomotivecms_search', path: '../search'
+# gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'd9c8141ba'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '0f32f0dfd2', require: false
-gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
-gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
-gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '455eac8', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'c4b21146'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '0196871', require: false
+# gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
+# gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
+# gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '455eac8', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use Puma as the app server
-gem 'puma', '~> 4.3.1'
+gem 'puma', '~> 5.1.0'
 # gem 'passenger-rails'
 gem 'rack-cors', require: 'rack/cors'
 # Use SCSS for stylesheets

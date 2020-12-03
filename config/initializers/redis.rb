@@ -13,16 +13,16 @@ module ActiveSupport
 
       def failsafe(method, returning: nil)
         yield
-      rescue ::RuntimeError => e
+      rescue ::Redis::BaseConnectionError => e
+        handle_exception exception: e, method: method, returning: returning
+        returning
+      rescue StandardError => e
         if e.message =~ HIREDIS_CONNECTION_MSG_REGEXP
           handle_exception exception: e, method: method, returning: returning
           returning
         else
           raise
         end
-      rescue ::Redis::BaseConnectionError => e
-        handle_exception exception: e, method: method, returning: returning
-        returning
       end
 
     end
