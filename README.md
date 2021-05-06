@@ -14,4 +14,4 @@ Ruby on Rails application powering the LocomotiveCMS engine. This is the applica
 
 Feel free to contact me at didier at nocoffee dot fr.
 
-Copyright (c) 2020 NoCoffee, released under the MIT license
+Copyright (c) 2021 NoCoffee, released under the MIT license
