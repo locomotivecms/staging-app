@@ -9,6 +9,8 @@ gem 'mongo', '2.13.1'
 gem 'mongoid'
 gem 'devise'
 
+gem 'mimemagic', '~> 0.4.3'
+
 # gem 'pry'
 # gem 'custom_fields', path: '../../custom_fields' # for Developers
 # gem 'locomotivecms_common', path: '../../common', require: false
