@@ -20,11 +20,11 @@ gem 'mimemagic', '~> 0.4.3'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '40d170ea'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: 'b8d40db27f3', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'ccd5dd88'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '9661fdb', require: false
 # gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
-# gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '455eac8', require: false
+gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: 'e6f6479', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'

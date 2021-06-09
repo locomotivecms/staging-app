@@ -1,7 +1,19 @@
 GIT
+  remote: https://github.com/locomotivecms/custom_fields.git
+  revision: e6f64790e18ef519f6f2d2978c95be1b08bc2503
+  ref: e6f6479
+  specs:
+    custom_fields (2.11.0)
+      activesupport (>= 5.1, < 6.0)
+      bcrypt (~> 3.1.11)
+      carrierwave-mongoid (~> 1.3.0)
+      monetize (~> 1.9.0)
+      mongoid (>= 6.2, < 7.0)
+
+GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 40d170ea7704ca80d275ab04c8e37baf05f6c712
-  ref: 40d170ea
+  revision: ccd5dd88aad8de225d7eeb64dbc58b735df2512b
+  ref: ccd5dd88
   specs:
     locomotivecms (4.1.0.beta)
       actionmailer-with-request (~> 0.5.0)
@@ -11,9 +23,9 @@ GIT
       bootstrap-kaminari-views (~> 0.0.5)
       bootstrap-sass (~> 3.4.1)
       carrierwave-imageoptim (= 0.1.5)
-      carrierwave-mongoid (~> 1.1.0)
+      carrierwave-mongoid (~> 1.3.0)
       codemirror-rails (~> 5.16.0)
-      custom_fields (~> 2.10.0)
+      custom_fields (~> 2.11.0)
       devise (~> 4.7.3)
       devise-encryptable (~> 0.2.0)
       dragonfly (~> 1.2.0)
@@ -50,8 +62,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: b8d40db27f3aee797c4004986106f57822687db8
-  ref: b8d40db27f3
+  revision: 9661fdbb7f9a3d6d208e6b016ebf093d56f30e05
+  ref: 9661fdb
   specs:
     locomotivecms_steam (1.5.3)
       RedCloth (~> 4.3.2)
@@ -60,7 +72,7 @@ GIT
       chronic (~> 0.10.2)
       coffee-script (~> 2.4.1)
       compass (~> 1.0.3)
-      dragonfly (~> 1.2.0)
+      dragonfly (>= 1.2, < 1.5)
       duktape (~> 2.0.1.1)
       httparty (~> 0.16.0)
       kramdown (~> 2.3.0)
@@ -184,8 +196,8 @@ GEM
     carrierwave-imageoptim (0.1.5)
       carrierwave (>= 0.10, < 1.3)
       image_optim (~> 0.22)
-    carrierwave-mongoid (1.1.0)
-      carrierwave (>= 0.8, < 1.3)
+    carrierwave-mongoid (1.3.0)
+      carrierwave (>= 0.8, < 3)
       mongoid (>= 3.0, < 8.0)
       mongoid-grid_fs (>= 1.3, < 3.0)
     childprocess (3.0.0)
@@ -218,12 +230,6 @@ GEM
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    custom_fields (2.10.0)
-      activesupport (>= 5.1, < 6.0)
-      bcrypt (~> 3.1.11)
-      carrierwave-mongoid (~> 1.1.0)
-      monetize (~> 1.9.0)
-      mongoid (>= 6.2, < 7.0)
     devise (4.7.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -514,6 +520,7 @@ DEPENDENCIES
   carrierwave-aws
   chromedriver-helper
   coffee-rails (~> 4.2)
+  custom_fields!
   devise
   hiredis (~> 0.6.3)
   jbuilder (~> 2.5)
