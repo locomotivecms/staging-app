@@ -20,8 +20,8 @@ gem 'mimemagic', '~> 0.4.3'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'ccd5dd88'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '9661fdb', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: '8ad41dee'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '8eb4c45', require: false
 # gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
 gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: 'e6f6479', require: false
@@ -61,7 +61,7 @@ gem 'carrierwave-aws'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug' #, platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
