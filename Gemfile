@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '2.7.4'
 
-gem 'bundler', '2.1.4'
+gem 'bundler', '2.2.32'
 
 gem 'mongo', '2.13.1'
 gem 'mongoid'
@@ -20,11 +20,11 @@ gem 'mimemagic', '~> 0.4.3'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '8ad41dee'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '985852f', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'f298ab44'
+# gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '985852f', require: false
 # gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
-gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: 'e6f6479', require: false
+gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: 'b615fd3', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
