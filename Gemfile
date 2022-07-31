@@ -20,7 +20,7 @@ gem 'mimemagic', '~> 0.4.3'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'd9f41319'
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: '87c9117b'
 gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '89d6871', require: false
 # gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
