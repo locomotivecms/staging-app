@@ -12,8 +12,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: f298ab444f1ecabd90ff42587ac0007e3137b3a4
-  ref: f298ab44
+  revision: d9f413195801ca29fdb388cdb80fd6ff07952f6e
+  ref: d9f41319
   specs:
     locomotivecms (4.1.0.rc2)
       actionmailer-with-request (~> 0.5.0)
@@ -59,6 +59,39 @@ GIT
       simple_token_authentication (~> 1.15.1)
       slim (~> 3.0.9)
       yajl-ruby (~> 1.3.1)
+
+GIT
+  remote: https://github.com/locomotivecms/steam.git
+  revision: 89d6871ce80bf2681f70fce939e3444a77b7baaf
+  ref: 89d6871
+  specs:
+    locomotivecms_steam (1.6.0.rc1)
+      RedCloth (~> 4.3.2)
+      autoprefixer-rails (~> 8.0.0)
+      bcrypt (~> 3.1.11)
+      chronic (~> 0.10.2)
+      coffee-script (~> 2.4.1)
+      compass (~> 1.0.3)
+      dragonfly (>= 1.2, < 1.5)
+      duktape (~> 2.0.1.1)
+      httparty (~> 0.16.0)
+      kramdown (~> 2.3.0)
+      liquid (~> 4.0.3)
+      locomotivecms_common (~> 0.4.0)
+      mime-types (~> 3.3.0)
+      mimetype-fu (~> 0.1.2)
+      moneta (~> 1.0.0)
+      morphine (~> 0.1.1)
+      multi_json (~> 1.15.0)
+      nokogiri (~> 1.11.0)
+      pony (~> 1.12)
+      rack-cache (~> 1.7.0)
+      rack-rewrite (~> 1.5.1)
+      rack_csrf (~> 2.6.0)
+      sanitize (~> 5.2.1)
+      sass (~> 3.4.25)
+      sprockets (~> 3.7.1)
+      uglifier (~> 4.1.3)
 
 GEM
   remote: https://rubygems.org/
@@ -209,15 +242,11 @@ GEM
       addressable (~> 2.3)
       multi_json (~> 1.0)
       rack (>= 1.3)
-    dry-configurable (0.14.0)
+    dry-container (0.10.1)
       concurrent-ruby (~> 1.0)
-      dry-core (~> 0.6)
-    dry-container (0.9.0)
+    dry-core (0.8.1)
       concurrent-ruby (~> 1.0)
-      dry-configurable (~> 0.13, >= 0.13.0)
-    dry-core (0.7.1)
-      concurrent-ruby (~> 1.0)
-    dry-inflector (0.2.1)
+    dry-inflector (0.3.0)
     dry-logic (1.2.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.5, >= 0.5)
@@ -307,33 +336,6 @@ GEM
       attr_extras (~> 5.2.0)
       colorize
       stringex (~> 2.8.2)
-    locomotivecms_steam (1.6.0.rc1)
-      RedCloth (~> 4.3.2)
-      autoprefixer-rails (~> 8.0.0)
-      bcrypt (~> 3.1.11)
-      chronic (~> 0.10.2)
-      coffee-script (~> 2.4.1)
-      compass (~> 1.0.3)
-      dragonfly (>= 1.2, < 1.5)
-      duktape (~> 2.0.1.1)
-      httparty (~> 0.16.0)
-      kramdown (~> 2.3.0)
-      liquid (~> 4.0.3)
-      locomotivecms_common (~> 0.4.0)
-      mime-types (~> 3.3.0)
-      mimetype-fu (~> 0.1.2)
-      moneta (~> 1.0.0)
-      morphine (~> 0.1.1)
-      multi_json (~> 1.15.0)
-      nokogiri (~> 1.11.0)
-      pony (~> 1.12)
-      rack-cache (~> 1.7.0)
-      rack-rewrite (~> 1.5.1)
-      rack_csrf (~> 2.6.0)
-      sanitize (~> 5.2.1)
-      sass (~> 3.4.25)
-      sprockets (~> 3.7.1)
-      uglifier (~> 4.1.3)
     logger (1.5.1)
     loofah (2.13.0)
       crass (~> 1.0.2)
@@ -370,9 +372,9 @@ GEM
     morphine (0.1.1)
     multi_json (1.15.0)
     multi_xml (0.6.0)
-    mustermann (1.1.1)
+    mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    mustermann-grape (1.0.1)
+    mustermann-grape (1.0.2)
       mustermann (>= 1.0.0)
     nio4r (2.5.8)
     nokogiri (1.11.7)
@@ -522,6 +524,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   locomotivecms!
+  locomotivecms_steam!
   mimemagic (~> 0.4.3)
   mongo (= 2.13.1)
   mongoid
