@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.4'
-
-gem 'bundler', '2.2.32'
+ruby '2.7.6'
 
 gem 'mongo', '2.13.1'
 gem 'mongoid'
