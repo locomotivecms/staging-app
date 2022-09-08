@@ -25,8 +25,13 @@ Locomotive.configure do |config|
   # available locales suggested to "localize" a site. You will have to pick up at least one among that list.
   config.site_locales = %w{en de fr es} # pl pt pt-BR it nl nb es ru ja cs bg sk uk}
 
-  # tell if logs are enabled. Useful for debug purpose.
+  # tell if logs of the Engine (back-office) are enabled. Useful for debug purpose.
   config.enable_logs = true
+
+  # setup the logger for Steam (rendering)
+  # config.steam_log_file = ENV['LOCOMOTIVE_STEAM_LOG'] || Rails.root.join('log', 'steam.log')
+  config.steam_log_level = ::Logger::INFO
+  # config.steam_log_level = ::Logger::INFO
 
   # the API authentication requires to developer to pass 2 params in the header
   # of the request: X-Locomotive-Account-Email and X-Locomotive-Token.
@@ -68,5 +73,4 @@ Locomotive.configure do |config|
   # Indicate whether you want to allow users to register with the site. If set
   # to false the registration page will not be shown. (Default: true)
   config.enable_registration = false
-
 end
