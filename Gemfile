@@ -9,6 +9,8 @@ gem 'devise'
 
 gem 'mimemagic', '~> 0.4.3'
 
+gem 'remote_syslog_logger', '1.0.4'
+
 # gem 'pry'
 # gem 'custom_fields', path: '../../custom_fields' # for Developers
 # gem 'locomotivecms_common', path: '../../common', require: false
@@ -18,8 +20,8 @@ gem 'mimemagic', '~> 0.4.3'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '2036325a'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: 'e4be455', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: '424f7f72'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '04baf41', require: false
 # gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
 gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: 'b615fd3', require: false

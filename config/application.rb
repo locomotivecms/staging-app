@@ -40,5 +40,12 @@ module Locomotiveapp
       end
     end
 
+    # Steam
+    initializer 'station.steam', after: 'steam' do |app|
+      Locomotive::Steam.configure do |config|
+        config.middleware.insert_before Locomotive::Steam::Middlewares::Site, Locomotive::Steam::Middlewares::Papertrail
+      end
+    end
+
   end
 end

@@ -12,10 +12,10 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/engine.git
-  revision: 2036325a24cae355fe35f0a1097b4d4d1b0f0a9c
-  ref: 2036325a
+  revision: 424f7f72d3703fda15cd16e69493af234a0e3873
+  ref: 424f7f72
   specs:
-    locomotivecms (4.1.0.rc2)
+    locomotivecms (4.1.0)
       actionmailer-with-request (~> 0.5.0)
       adomain (~> 0.1.1)
       autoprefixer-rails (~> 8.0.0)
@@ -42,7 +42,7 @@ GIT
       json-schema (~> 2.8.0)
       kaminari-actionview (~> 1.2.1)
       kaminari-mongoid (~> 1.0.1)
-      locomotivecms_steam (~> 1.6.0.rc2)
+      locomotivecms_steam (~> 1.6.0)
       mongo (= 2.13.1)
       mongoid (~> 6.4.0)
       mongoid-tree (~> 2.1.0)
@@ -62,10 +62,10 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: e4be455cdfaf8894acd8e393fb0341d351beac53
-  ref: e4be455
+  revision: 04baf41bd0fa09f05f65bc63a3cf16bac086abc9
+  ref: 04baf41
   specs:
-    locomotivecms_steam (1.6.0.rc2)
+    locomotivecms_steam (1.6.0)
       RedCloth (~> 4.3.2)
       autoprefixer-rails (~> 8.0.0)
       bcrypt (~> 3.1.11)
@@ -257,7 +257,7 @@ GEM
       addressable (~> 2.3)
       multi_json (~> 1.0)
       rack (>= 1.3)
-    dry-container (0.10.1)
+    dry-container (0.11.0)
       concurrent-ruby (~> 1.0)
     dry-core (0.8.1)
       concurrent-ruby (~> 1.0)
@@ -275,7 +275,7 @@ GEM
     equalizer (0.0.11)
     erubi (1.11.0)
     execjs (2.8.1)
-    exifr (1.3.9)
+    exifr (1.3.10)
     ffi (1.15.5)
     flash_cookie_session (1.1.6)
       rails (>= 3.0)
@@ -466,6 +466,8 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redis (4.1.4)
+    remote_syslog_logger (1.0.4)
+      syslog_protocol
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
@@ -513,6 +515,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     stringex (2.8.5)
+    syslog_protocol (0.9.2)
     temple (0.8.2)
     thor (1.2.1)
     thread_safe (0.3.6)
@@ -572,6 +575,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 5.2.3)
   redis (~> 4.1.4)
+  remote_syslog_logger (= 1.0.4)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
