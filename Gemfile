@@ -3,8 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.6'
 
-gem 'mongo', '2.13.1'
-gem 'mongoid'
+# gem 'mongo', '2.13.1'
+# gem 'mongoid'
 gem 'devise'
 
 gem 'mimemagic', '~> 0.4.3'
@@ -20,11 +20,11 @@ gem 'remote_syslog_logger', '1.0.4'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'c53fe5d8'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '3679ec6', require: false
-# gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '2f9ba59', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'c454639d0b'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '3147780a64', require: false
+gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c1cfc447ede9', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
-gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: 'b615fd3', require: false
+gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: 'ada6aba116b', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -40,7 +40,7 @@ gem 'uglifier', '>= 4.1.20'
 # gem 'mini_racer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
