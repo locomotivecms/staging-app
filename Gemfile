@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.3'
+ruby '3.1.0'
 
 gem 'rails', '~> 7.0', '>= 7.0.4.2'
 gem 'rack-cors', require: 'rack/cors'
@@ -23,7 +23,7 @@ gem 'remote_syslog_logger', '1.0.4'
 # gem 'locomotivecms_search', path: '../../search'
 
 gem 'locomotivecms', github: 'locomotivecms/engine', ref: '97b9b6d61'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '0d28e0424', require: false
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '1f59b18f4d', require: false
 gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c1cfc447e', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
 gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '646652f46c', require: false

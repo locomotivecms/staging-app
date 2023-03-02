@@ -72,8 +72,8 @@ GIT
 
 GIT
   remote: https://github.com/locomotivecms/steam.git
-  revision: 0d28e0424e6ea3760d09f970ea8333ed8bcd8609
-  ref: 0d28e0424
+  revision: 1f59b18f4d83489fe17a89544898e6737fc804e6
+  ref: 1f59b18f4d
   specs:
     locomotivecms_steam (1.7.0)
       RedCloth (~> 4.3.2)
@@ -492,6 +492,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-darwin-22
 
 DEPENDENCIES
   carrierwave-aws
@@ -512,7 +513,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.0.3p157
+   ruby 3.1.0p0
 
 BUNDLED WITH
    2.3.10
