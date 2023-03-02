@@ -5,7 +5,7 @@ Rails.application.configure do
 
   redis_url = ENV['REDIS_URL'] || 'redis://127.0.0.1:6379/0/staging-locomotive'
   config.cache_store = :redis_cache_store, { url: ENV['REDIS_URL'] }
-  config.session_store :cache_store, key: "_#{Rails.application.class.parent_name.downcase}_session"
+  config.session_store :cache_store, key: "_#{Rails.application.class.module_parent_name.downcase}_session"
 
   # Code is not reloaded between requests.
   config.cache_classes = true
