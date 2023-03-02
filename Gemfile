@@ -3,12 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
-# gem 'mongo', '2.13.1'
-# gem 'mongoid'
+gem 'rails', '~> 7.0', '>= 7.0.4.2'
+gem 'rack-cors', require: 'rack/cors'
+gem 'puma', '~> 6.1.1'
 gem 'devise'
-
+gem 'carrierwave-aws'
+gem 'redis', '~> 5.0.6'
+gem 'hiredis', '~> 0.6.3'
 gem 'mimemagic', '~> 0.4.3'
-
 gem 'remote_syslog_logger', '1.0.4'
 
 # gem 'pry'
@@ -20,19 +22,18 @@ gem 'remote_syslog_logger', '1.0.4'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-# gem 'locomotivecms', github: 'locomotivecms/engine', ref: '97b9b6d61'
-# gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '0d28e0424', require: false
-# gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c1cfc447e', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: '97b9b6d61'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '0d28e0424', require: false
+gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c1cfc447e', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
-# gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '646652f46c', require: false
+gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '646652f46c', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 7.0', '>= 7.0.4.2'
-gem 'rails', '6.1.7.2'
 # Use Puma as the app server
-gem 'puma', '~> 6.1.1'
+
 # gem 'passenger-rails'
-gem 'rack-cors', require: 'rack/cors'
+
 # Use SCSS for stylesheets
 
 
@@ -50,13 +51,11 @@ gem 'rack-cors', require: 'rack/cors'
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production + Cache
 
-gem 'redis', '~> 5.0.6'
-gem 'hiredis', '~> 0.6.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'carrierwave-aws'
+
 
 # gem 'sidekiq'
 
