@@ -1,6 +1,7 @@
 require 'hiredis'
 require 'active_support/cache/redis_cache_store'
 
+# UPDATE (03/02/2023): not required apparently
 # My attempt to fix this inconsistent behavior of HiRedis. The issue is described here:
 # https://github.com/redis/hiredis-rb/issues/40
 # module ActiveSupport

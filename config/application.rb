@@ -32,8 +32,9 @@ module Locomotiveapp
 
     # Steam
     initializer 'station.steam', after: 'steam' do |app|
+      require 'locomotive/steam/middlewares/papertrail'
       Locomotive::Steam.configure do |config|
-        config.middleware.insert_before Locomotive::Steam::Middlewares::Site, 'Locomotive::Steam::Middlewares::Papertrail'
+        config.middleware.insert_before Locomotive::Steam::Middlewares::Site, Locomotive::Steam::Middlewares::Papertrail
       end
     end
 
