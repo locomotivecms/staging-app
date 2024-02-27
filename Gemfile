@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.0'
+ruby '3.1.4'
 
-gem 'rails', '~> 7.0', '>= 7.0.4.2'
+gem 'rails', '~> 7.1', '< 7.2'
 gem 'rack-cors', require: 'rack/cors'
-gem 'puma', '~> 6.1.1'
+gem 'puma', '~> 6.4.0'
 gem 'devise'
 gem 'carrierwave-aws'
 gem 'redis', '~> 5.0.6'
@@ -22,11 +22,11 @@ gem 'remote_syslog_logger', '1.0.4'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: '97b9b6d61'
-gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '1f59b18f4d', require: false
-gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c1cfc447e', require: false
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'b27461aa0d'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '67c0de7b4e', require: false
+gem 'locomotivecms_common', github: 'locomotivecms/common', ref: '054505c', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
-gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '646652f46c', require: false
+gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: 'd526dcb7bcb', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 7.0', '>= 7.0.4.2'
@@ -69,7 +69,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   # gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  # gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   # gem 'spring'
   # gem 'spring-watcher-listen', '~> 2.0.0'
