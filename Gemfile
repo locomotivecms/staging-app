@@ -28,6 +28,9 @@ gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c78da158', req
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
 gem 'custom_fields', github: 'locomotivecms/custom_fields', ref: '87bf1b', require: false
 
+# Reduces boot times through caching; required in config/boot.rb
+gem "bootsnap", require: false
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 7.0', '>= 7.0.4.2'
 # Use Puma as the app server
