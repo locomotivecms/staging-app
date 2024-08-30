@@ -276,6 +276,7 @@ GEM
     erubi (1.13.0)
     execjs (2.9.1)
     ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     flash_cookie_session (1.1.6)
       rails (>= 3.0)
     font-awesome-sass (6.3.0)
@@ -387,6 +388,8 @@ GEM
       net-protocol
     nio4r (2.7.3)
     nokogiri (1.15.6-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.6-x86_64-linux)
       racc (~> 1.4)
     origin (2.3.1)
     orm_adapter (0.5.0)
@@ -516,6 +519,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   carrierwave-aws
