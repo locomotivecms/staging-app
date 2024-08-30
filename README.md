@@ -6,12 +6,12 @@ Ruby on Rails application powering the LocomotiveCMS engine. This is the applica
 
 ## Major component versions
 
-- Ruby 2.5
-- Ruby on Rails 5.2.3
-- LocomotiveCMS v4.0.0.rc0
+- Ruby 3.2
+- Ruby on Rails 7.1
+- LocomotiveCMS v4.2
 
 ## Contact
 
 Feel free to contact me at didier at nocoffee dot fr.
 
-Copyright (c) 2021 NoCoffee, released under the MIT license
+Copyright (c) 2024 NoCoffee, released under the MIT license
