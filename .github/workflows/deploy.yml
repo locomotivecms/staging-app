@@ -76,6 +76,7 @@ jobs:
         id: tag
         run: |
           echo "tag=$(git rev-parse "$GITHUB_SHA")" >> $GITHUB_OUTPUT
+          echo "🍿 service=${{ github.event.repository.name }}"
 
       - name: Build image
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
