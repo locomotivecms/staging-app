@@ -1,5 +1,5 @@
 # Name of your application. Used to uniquely configure containers.
-service: locomotive-staging-app
+service: staging-app
 
 # Name of the container image.
 image: locomotivecms/staging-app
