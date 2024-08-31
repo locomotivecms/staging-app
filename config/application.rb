@@ -40,8 +40,10 @@ module Locomotiveapp
 
     config.hosts << 'beta.locomotive.works'
     config.hosts << ->(host) {
+      pp Rails.cache
       permitted_domains = Rails.cache.fetch('locomotive-domains', expires_in: 2.minute) do
-        Locomotive::Site.pluck(:domains).flatten
+        # Locomotive::Site.pluck(:domains).flatten
+        ['demo.locomotivecms.com']
       end
       permitted_domains.include?(host)
     }
