@@ -101,4 +101,5 @@ Rails.application.configure do
   config.hosts << 'localhost:3000' # required when running within a Docker container (Kamal)
   config.hosts << '127.0.0.1:3000'
   config.hosts << 'beta.locomotive.works'
+  config.hosts << 'beta2.locomotive.works'
 end
