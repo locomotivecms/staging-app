@@ -109,7 +109,6 @@ jobs:
       - name: Run deploy command
         run: |
           git status --porcelain
-          kamal setup
           kamal env push
           kamal deploy --skip-push
 

@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+# NOTE: We don't use Postgresql but MongoDB (so db:prepare doesn't exist in that context)
+# # If running the rails server then create or migrate existing database
+# if [ "${1}" == "./bin/rails" ] && [ "${2}" == "server" ]; then
+#   ./bin/rails db:prepare
+# fi
+
+exec "${@}"
