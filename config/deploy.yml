@@ -16,13 +16,6 @@ servers:
     options:
       network: "private"
 
-  job:
-    hosts:
-      - 174.138.51.62
-    cmd: bundle exec sidekiq -e production -t 25
-    options:
-      network: "private"
-
 # Credentials for your image host.
 registry:
   server: ghcr.io

@@ -3,7 +3,7 @@ require 'active_support/cache/redis_cache_store'
 
 begin
   redis = Redis.new
-  pp redis.ping
+  puts "✅ REDIS" if redis.ping == 'PONG'
 rescue Exception => e
   pp "🚨🚨🚨 #{e.message}"
 end
