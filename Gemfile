@@ -65,11 +65,9 @@ gem "bootsnap", require: false
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'dotenv'
-
 group :development, :test do
   gem "debug", ">= 1.0.0"
-  
+  gem 'dotenv'  
 end
 
 group :development do
