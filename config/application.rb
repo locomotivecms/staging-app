@@ -23,12 +23,12 @@ module Locomotiveapp
 
     config.x.locomotive_search_backend = :algolia
 
-    # config.middleware.insert_before 0, Rack::Cors do
-    #   allow do
-    #     origins '*'
-    #     resource '/assets/*', headers: :any, methods: :any
-    #   end
-    # end
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '/assets/*', headers: :any, methods: :any
+      end
+    end
 
     # Steam
     # initializer 'station.steam', after: 'steam' do |app|
@@ -38,12 +38,9 @@ module Locomotiveapp
     #   end
     # end
 
-    config.hosts << 'beta.locomotive.works'
     config.hosts << ->(host) {
-      pp Rails.cache
       permitted_domains = Rails.cache.fetch('locomotive-domains', expires_in: 2.minute) do
-        # Locomotive::Site.pluck(:domains).flatten
-        ['demo.locomotivecms.com']
+        Locomotive::Site.pluck(:domains).flatten
       end
       permitted_domains.include?(host)
     }

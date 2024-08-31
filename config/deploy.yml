@@ -28,7 +28,6 @@ accessories:
     image: redis:7.0
     roles:
       - web
-      - job
     volumes:
       - /var/lib/redis:/data
     options:
