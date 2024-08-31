@@ -22,7 +22,7 @@ gem 'remote_syslog_logger', '1.0.4'
 
 # gem 'locomotivecms_search', path: '../../search'
 
-gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'e6fb512c'
+gem 'locomotivecms', github: 'locomotivecms/engine', ref: 'e6fb512c', require: false
 gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: '4386db6', require: false
 gem 'locomotivecms_common', github: 'locomotivecms/common', ref: 'c78da158', require: false
 # gem 'locomotivecms_search', github: 'locomotivecms/search', ref: '35e5813'
@@ -65,9 +65,11 @@ gem "bootsnap", require: false
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'dotenv'
+
 group :development, :test do
   gem "debug", ">= 1.0.0"
-  gem 'dotenv'
+  
 end
 
 group :development do
