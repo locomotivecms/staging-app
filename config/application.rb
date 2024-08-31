@@ -17,13 +17,13 @@ Bundler.require(*Rails.groups)
 module Locomotiveapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
+    config.load_defaults 7.1
 
     config.autoload_paths << Rails.root.join('lib')
 
     config.x.locomotive_search_backend = :algolia
 
-    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
         resource '/assets/*', headers: :any, methods: :any
