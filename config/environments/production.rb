@@ -30,7 +30,7 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
-  config.action_controller.asset_host = 'https://d1bqx47vp6rlu8.cloudfront.net'
+  config.action_controller.asset_host = ENV['CDN_ASSET_HOST']
 
   config.assets.compile = false
 
