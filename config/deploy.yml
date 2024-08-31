@@ -5,8 +5,23 @@ service: staging-app
 image: locomotivecms/staging-app
 
 # Deploy to these servers.
-servers:
-  - 174.138.51.62
+servers:  
+  web:
+    hosts:
+      - 174.138.51.62
+    labels:
+      traefik.http.routers.my_awesome_app.entrypoints: websecure
+      traefik.http.routers.my_awesome_app.rule: Host(`beta.locomotive.works`) || Host(`demo.locomotivecms.com`) || Host(`recaptcha.nocoffee.fr`)
+      traefik.http.routers.my_awesome_app.tls.certresolver: letsencrypt
+    options:
+      network: "private"
+
+  job:
+    hosts:
+      - 174.138.51.62
+    cmd: bundle exec sidekiq -e production -t 25
+    options:
+      network: "private"
 
 # Credentials for your image host.
 registry:
@@ -14,6 +29,17 @@ registry:
   username: did
   password:
     - DOCKER_REGISTRY_TOKEN
+
+accessories:
+  redis:
+    image: redis:7.0
+    roles:
+      - web
+      - job
+    volumes:
+      - /var/lib/redis:/data
+    options:
+      network: "private" 
 
 # Inject ENV variables into containers (secrets come from .env).
 # Remember to run `kamal env push` after making changes!
@@ -27,6 +53,7 @@ env:
     RAILS_ENV: production
     RAILS_LOG_TO_STDOUT: enabled
     RAILS_SERVE_STATIC_FILES: enabled 
+    REDIS_URL: "redis://staging-app-redis:6379/0"
   secret:
     - RAILS_MASTER_KEY
     - SECRET_KEY_BASE
