@@ -25,13 +25,13 @@ registry:
 
 accessories:
   mongodb:
-    image: mongodb/mongodb-community-server:7.0.12
+    image: mongodb/mongodb-community-server:7.0.12-ubuntu2204
     roles:
       - web
     env:
       secret:
-        - MONGO_INITDB_ROOT_USERNAME
-        - MONGO_INITDB_ROOT_PASSWORD
+        - MONGODB_INITDB_ROOT_USERNAME
+        - MONGODB_INITDB_ROOT_PASSWORD
     volumes:
       - /var/lib/mongodb:/data/db
     options:
@@ -74,8 +74,8 @@ env:
     - SCOUT_APM_KEY
     - SENDGRID_USERNAME
     - SENDGRID_PASSWORD
-    - MONGO_INITDB_ROOT_USERNAME
-    - MONGO_INITDB_ROOT_PASSWORD
+    - MONGODB_INITDB_ROOT_USERNAME
+    - MONGODB_INITDB_ROOT_PASSWORD
 
 # Use a different ssh user than root
 # ssh:
