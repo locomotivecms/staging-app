@@ -24,6 +24,19 @@ registry:
     - DOCKER_REGISTRY_TOKEN
 
 accessories:
+  mongodb:
+    image: mongodb/mongodb-community-server:7.0.12
+    roles:
+      - web
+    env:
+      secret:
+        - MONGO_INITDB_ROOT_USERNAME
+        - MONGO_INITDB_ROOT_PASSWORD
+    volumes:
+      - /var/lib/mongodb:/data/db
+    options:
+      network: "private"
+
   redis:
     image: redis:7.0
     roles:
@@ -61,6 +74,8 @@ env:
     - SCOUT_APM_KEY
     - SENDGRID_USERNAME
     - SENDGRID_PASSWORD
+    - MONGO_INITDB_ROOT_USERNAME
+    - MONGO_INITDB_ROOT_PASSWORD
 
 # Use a different ssh user than root
 # ssh:
