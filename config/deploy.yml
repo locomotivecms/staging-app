@@ -75,7 +75,7 @@ env:
     - SENDGRID_USERNAME
     - SENDGRID_PASSWORD
     - MONGO_INITDB_ROOT_USERNAME
-    - MONGO_INITDB_ROOT_PASSWORD
+    - MONGO_INITDB_ROOT_PASSWORDE
 
 # Use a different ssh user than root
 # ssh:
