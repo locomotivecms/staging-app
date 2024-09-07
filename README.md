@@ -24,7 +24,7 @@ On the server
 docker network create --driver bridge private
 ```
 
-Copy the private SSH key to the GH actions (SSH_PRIVATE_KEY)
+Copy your your private SSH key (the one you entered in your Github settings) to the GH actions (SSH_PRIVATE_KEY).
 
 ## Contact
 
