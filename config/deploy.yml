@@ -11,7 +11,7 @@ servers:
       - 172.232.44.53
     labels:
       traefik.http.routers.staging-app.entrypoints: websecure
-      traefik.http.routers.staging-app.rule: Host(`beta2.locomotive.works`)
+      traefik.http.routers.staging-app.rule: Host(`beta2.locomotive.works`) || Host(`beta.locomotive.works`) || Host(`demo.locomotivecms.com`) || Host(`recaptcha.nocoffee.fr`)
       traefik.http.routers.staging-app.tls.certresolver: letsencrypt
     options:
       network: "private"
