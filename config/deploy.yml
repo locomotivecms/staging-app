@@ -146,6 +146,7 @@ healthcheck:
   # path: /healthz
   # port: 4000
   interval: 60s
+  max_attempts: 12
 
 # Bridge fingerprinted assets, like JS and CSS, between versions to avoid
 # hitting 404 on in-flight requests. Combines all files from new and old
