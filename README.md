@@ -10,6 +10,22 @@ Ruby on Rails application powering the LocomotiveCMS engine. This is the applica
 - Ruby on Rails 7.1
 - LocomotiveCMS v4.2
 
+## Server installation
+
+Locally
+
+```
+kamal deploy
+```
+
+On the server
+
+```
+docker network create --driver bridge private
+```
+
+Copy the private SSH key to the GH actions (SSH_PRIVATE_KEY)
+
 ## Contact
 
 Feel free to contact me at didier at nocoffee dot fr.

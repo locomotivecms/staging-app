@@ -8,7 +8,7 @@ image: locomotivecms/staging-app
 servers:  
   web:
     hosts:
-      - 174.138.51.62
+      - 172.232.44.53
     labels:
       traefik.http.routers.staging-app.entrypoints: websecure
       traefik.http.routers.staging-app.rule: Host(`beta2.locomotive.works`)
@@ -24,18 +24,20 @@ registry:
     - DOCKER_REGISTRY_TOKEN
 
 accessories:
-  mongodb:
-    image: mongodb/mongodb-community-server:7.0.12-ubuntu2204
-    roles:
-      - web
-    env:
-      secret:
-        - MONGODB_INITDB_ROOT_USERNAME
-        - MONGODB_INITDB_ROOT_PASSWORD
-    volumes:
-      - /var/lib/mongodb:/data/db
-    options:
-      network: "private"
+  # NOTE: Having mongodb requires a DO Droplet with at the very least 2GiB
+  # mongodb:
+  #   image: mongodb/mongodb-community-server:7.0.12-ubuntu2204
+  #   roles:
+  #     - web
+  #   env:
+  #     secret:
+  #       - MONGODB_INITDB_ROOT_USERNAME
+  #       - MONGODB_INITDB_ROOT_PASSWORD
+  #   volumes:
+  #     - /var/lib/mongodb-config:/data/configdb
+  #     - /var/lib/mongodb:/data/db
+  #   options:
+  #     network: "private"
 
   redis:
     image: redis:7.0
@@ -43,6 +45,7 @@ accessories:
       - web
     volumes:
       - /var/lib/redis:/data
+    cmd: "redis-server --appendonly no --maxmemory 128mb --maxmemory-policy allkeys-lru"
     options:
       network: "private" 
 
