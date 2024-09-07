@@ -2,7 +2,7 @@ Locomotive.configure do |config|
 
   # enable it if you want Locomotive to render the site of the Rails application embedding the engine
   if Rails.env.production?
-    config.host = 'beta2.locomotive.works'
+    config.host = 'beta.locomotive.works'
   end
 
   # list of forbidden handles for a site because there are in conflicts with internal resources.
