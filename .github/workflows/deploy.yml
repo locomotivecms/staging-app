@@ -107,7 +107,7 @@ jobs:
           
       - name: Install dependencies
         run: |
-          gem install kamal -v 1.8.2
+          gem install kamal -v 2.3.0
     
       - name: Run deploy command
         run: |

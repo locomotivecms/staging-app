@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.2.4'
+ruby '3.3.5'
 
 gem 'rails', '~> 7.1', '< 7.2'
 gem 'rack-cors', require: 'rack/cors'
@@ -68,6 +68,7 @@ gem "bootsnap", require: false
 group :development, :test do
   gem "debug", ">= 1.0.0"
   gem 'dotenv'
+  # gem 'kamal', path: '/Users/didier/Documents/NoCoffee/OSS/kamal'
 end
 
 group :development do
