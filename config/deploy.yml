@@ -26,6 +26,10 @@ proxy:
     - demo.locomotivecms.com
     - recaptcha.nocoffee.fr
   ssl: true
+  # hosts: [""]
+  # tls_on_demand_url: "http://staging-app-web-885ce91fc58a33895c085b0c2df1209ee4d2f160:3000/locomotive/api/allowed_host"
+  # tls_on_demand_url: "http://c3b8ae140910:3000/locomotive/api/allowed_host"
+  # tls_on_demand_url: "http://staging-app-web-latest:3000/locomotive/api/allowed_host"
   app_port: 3000
   forward_headers: true
   healthcheck: 
