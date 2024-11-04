@@ -23,6 +23,9 @@ module Locomotiveapp
 
     config.x.locomotive_search_backend = :algolia
 
+    require_relative '../app/middlewares/allowed_host_check_middleware'
+    config.middleware.insert_before Rack::Head, ::AllowedHostCheckMiddleware
+
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'

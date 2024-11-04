@@ -98,8 +98,12 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+
   config.hosts << 'localhost:3000' # required when running within a Docker container (Kamal)
   config.hosts << '127.0.0.1:3000'
+  config.hosts << /[a-z0-9]+:3000/ # hostname set up by Kamal proxy
+  config.hosts << /staging-app-web-[a-z0-9]+:3000/ # hostname set up by Kamal proxy
   config.hosts << 'beta.locomotive.works'
   config.hosts << 'beta2.locomotive.works'
 end
