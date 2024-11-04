@@ -9,33 +9,19 @@ servers:
   web:
     hosts:
       - 172.232.44.53
-    # labels:
-    #   traefik.http.routers.staging-app.entrypoints: websecure
-    #   traefik.http.routers.staging-app.rule: Host(`beta2.locomotive.works`) || Host(`beta.locomotive.works`) || Host(`demo.locomotivecms.com`) || Host(`recaptcha.nocoffee.fr`)
-    #   traefik.http.routers.staging-app.tls.certresolver: letsencrypt
-    # options:
-    #   network: "private"
-
+    
 builder:
   arch: amd64
 
 proxy:
-  hosts:
-    - beta2.locomotive.works
-    - beta.locomotive.works
-    - demo.locomotivecms.com
-    - recaptcha.nocoffee.fr
   ssl: true
-  # hosts: [""]
-  # tls_on_demand_url: "http://staging-app-web-885ce91fc58a33895c085b0c2df1209ee4d2f160:3000/locomotive/api/allowed_host"
-  # tls_on_demand_url: "http://c3b8ae140910:3000/locomotive/api/allowed_host"
-  # tls_on_demand_url: "http://staging-app-web-latest:3000/locomotive/api/allowed_host"
+  hosts: [""]
+  tls_on_demand_url: "http://staging-app-web-latest:3000/locomotive/api/allowed_host"
   app_port: 3000
   forward_headers: true
   healthcheck: 
     interval: 3
     timeout: 60
-    # max_attempts: 20
 
 # Credentials for your image host.
 registry:
@@ -68,7 +54,7 @@ accessories:
       - /var/lib/redis:/data
     cmd: "redis-server --appendonly no --maxmemory 128mb --maxmemory-policy allkeys-lru"
     
-# # Inject ENV variables into containers (secrets come from .env).
+# Inject ENV variables into containers (secrets come from .kamal/secrets).
 # # Remember to run `kamal env push` after making changes!
 env:
   clear:
@@ -96,99 +82,5 @@ env:
     - SCOUT_APM_KEY
     - SENDGRID_USERNAME
     - SENDGRID_PASSWORD
-    - MONGODB_INITDB_ROOT_USERNAME
-    - MONGODB_INITDB_ROOT_PASSWORD
-
-# Use a different ssh user than root
-# ssh:
-#   user: app
-
-# Configure builder setup.
-# builder:
-#   args:
-#     RUBY_VERSION: 3.2.0
-#   secrets:
-#     - GITHUB_TOKEN
-#   remote:
-#     arch: amd64
-#     host: ssh://app@192.168.0.1
-
-# Use accessory services (secrets come from .env).
-# accessories:
-#   db:
-#     image: mysql:8.0
-#     host: 192.168.0.2
-#     port: 3306
-#     env:
-#       clear:
-#         MYSQL_ROOT_HOST: '%'
-#       secret:
-#         - MYSQL_ROOT_PASSWORD
-#     files:
-#       - config/mysql/production.cnf:/etc/mysql/my.cnf
-#       - db/production.sql:/docker-entrypoint-initdb.d/setup.sql
-#     directories:
-#       - data:/var/lib/mysql
-#   redis:
-#     image: redis:7.0
-#     host: 192.168.0.2
-#     port: 6379
-#     directories:
-#       - data:/data
-
-# Configure custom arguments for Traefik. Be sure to reboot traefik when you modify it.
-# traefik:
-#   args:
-#     accesslog: true
-#     accesslog.format: json
-
-# traefik:
-#   options:
-#     publish:
-#       - "443:443"
-#     volume:
-#       - "/letsencrypt/acme.json:/letsencrypt/acme.json" # To save the configuration file.
-#     network: "private"
-#   args:
-#     entryPoints.web.address: ":80"
-#     entryPoints.websecure.address: ":443"
-#     entryPoints.web.http.redirections.entryPoint.to: websecure # We want to force https
-#     entryPoints.web.http.redirections.entryPoint.scheme: https
-#     entryPoints.web.http.redirections.entrypoint.permanent: true
-#     certificatesResolvers.letsencrypt.acme.email: "didier@nocoffee.fr"
-#     certificatesResolvers.letsencrypt.acme.storage: "/letsencrypt/acme.json" # Must match the path in `volume`
-#     certificatesResolvers.letsencrypt.acme.httpchallenge: true
-#     certificatesResolvers.letsencrypt.acme.httpchallenge.entrypoint: web
-
-# Configure a custom healthcheck (default is /up on port 3000)
-# healthcheck:
-#   # path: /healthz
-#   # port: 4000
-#   interval: 60s
-#   max_attempts: 20
-
-# Bridge fingerprinted assets, like JS and CSS, between versions to avoid
-# hitting 404 on in-flight requests. Combines all files from new and old
-# version inside the asset_path.
-#
-# If your app is using the Sprockets gem, ensure it sets `config.assets.manifest`.
-# See https://github.com/basecamp/kamal/issues/626 for details
-#
-# asset_path: /rails/public/assets
-
-# Configure rolling deploys by setting a wait time between batches of restarts.
-# boot:
-#   limit: 10 # Can also specify as a percentage of total hosts, such as "25%"
-#   wait: 2
-
-# Configure the role used to determine the primary_host. This host takes
-# deploy locks, runs health checks during the deploy, and follow logs, etc.
-#
-# Caution: there's no support for role renaming yet, so be careful to cleanup
-#          the previous role on the deployed hosts.
-# primary_role: web
-
-# Controls if we abort when see a role with no hosts. Disabling this may be
-# useful for more complex deploy configurations.
-#
-# allow_empty_roles: false
+    # - MONGODB_INITDB_ROOT_USERNAME
+    # - MONGODB_INITDB_ROOT_PASSWORD

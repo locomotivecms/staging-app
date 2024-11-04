@@ -45,7 +45,7 @@ jobs:
       S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
 
       SENDGRID_USERNAME: ${{ secrets.SENDGRID_USERNAME }}
-      SENDGRID_PASSWORD: ${{ secrets.SENDGRID_PASSWORD }}      
+      SENDGRID_PASSWORD: ${{ secrets.SENDGRID_PASSWORD }}
       
     steps:
       - name: Checkout code
@@ -107,12 +107,12 @@ jobs:
           
       - name: Install dependencies
         run: |
-          gem install kamal -v 2.3.0
+          gem install nocoffee-kamal -v 2.3.0.1
     
       - name: Run deploy command
         run: |
+          cp .kamal/secrets.github .kamal/secrets
           git status --porcelain
-          kamal env push
           kamal deploy --skip-push
 
       - uses: actions/delete-package-versions@v4

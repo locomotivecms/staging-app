@@ -68,7 +68,6 @@ gem "bootsnap", require: false
 group :development, :test do
   gem "debug", ">= 1.0.0"
   gem 'dotenv'
-  # gem 'kamal', path: '/Users/didier/Documents/NoCoffee/OSS/kamal'
 end
 
 group :development do
